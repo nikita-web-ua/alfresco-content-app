@@ -30,12 +30,14 @@ import * as rules from './folder-rules.rules';
 import { CommonModule } from '@angular/common';
 
 import { EditRuleDialogSmartComponent } from './rule-details/edit-rule-dialog.smart-component';
+import { RuleCompositeConditionUiComponent } from './rule-details/conditions/rule-composite-condition.ui-component';
 import { RuleDetailsUiComponent } from './rule-details/rule-details.ui-component';
+import { RuleSimpleConditionUiComponent } from './rule-details/conditions/rule-simple-condition.ui-component';
 
 @NgModule({
   providers: [provideExtensionConfig(['folder-rules.plugin.json'])],
   imports: [CommonModule, CoreModule.forChild()],
-  declarations: [EditRuleDialogSmartComponent, RuleDetailsUiComponent]
+  declarations: [EditRuleDialogSmartComponent, RuleCompositeConditionUiComponent, RuleDetailsUiComponent, RuleSimpleConditionUiComponent]
 })
 export class AcaFolderRulesModule {
   constructor(translation: TranslationService, extensions: ExtensionService) {

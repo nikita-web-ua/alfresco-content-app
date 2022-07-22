@@ -814,6 +814,15 @@
         }
       },
       {
+        "id": "app.context.menu.rules",
+        "title": "ACA_FOLDER_RULES.MENU.CREATE_RULES",
+        "icon": "gavel",
+        "order": 1600,
+        "actions": {
+          "click": "MANAGE_RULES"
+        }
+      },
+      {
         "id": "app.context.menu.joinLibrary",
         "type": "custom",
         "order": 100,
